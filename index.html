@@ -55,9 +55,16 @@
 <body>
     <h1>Sennagraphy</h1>
     <div class="menu-container">
+        <a href="#" class="menu-item">Home</a>
+        <a href="#" class="menu-item">Quick Insights</a>
+        <a href="#" class="menu-item">Web3 Education</a>
         <div class="menu-item" onclick="toggleSubmenu('journey-submenu')">45-Day Researcher Journey: Crypto & Web3</div>
         <div id="journey-submenu" class="submenu">
-            <a href="#">Web3 Foundations</a>
+            <div class="menu-item" onclick="toggleSubmenu('foundations-submenu')">Web3 Foundations</div>
+            <div id="foundations-submenu" class="submenu">
+                <a href="#">Intro to Blockchain</a>
+                <a href="#">Decentralization</a>
+            </div>
             <div class="menu-item" onclick="toggleSubmenu('deep-dive-submenu')">Deep Dive Portfolio</div>
             <div id="deep-dive-submenu" class="submenu">
                 <a href="#">AAVE</a>
