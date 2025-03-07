@@ -3,68 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOLANA Report</title>
+    <title>Solana Report</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             background-color: black;
             color: white;
+            text-align: left;
             padding: 20px;
         }
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        h2 {
-            font-size: 28px;
-            margin-top: 20px;
+        h1, h2 {
+            color: #FFD700;
         }
         p {
-            font-size: 18px;
+            margin-bottom: 15px;
             line-height: 1.6;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-        }
-        a {
-            color: lightblue;
+        .source-links a {
+            color: #FFD700;
             text-decoration: none;
         }
-        a:hover {
+        .source-links a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <h1>SOLANA Report</h1>
-    <p>This is the detailed report for SOLANA, focusing on scalability, speed, and the future of this blockchain.</p>
+    <p><strong>Solana</strong> is a Layer-1 blockchain engineered for high scalability within the Web3 ecosystem. According to the Solana whitepaper (v0.8.13), its architecture leverages Proof of History (PoH) to embed trustless time into the ledger, enabling sub-second transaction finality and a theoretical throughput of up to 710,000 transactions per second (TPS) on a 1 Gbps network. Messari highlights Solana’s aim to support decentralized applications (dApps) without performance bottlenecks such as throughput limits or high fees. With a price of $143.75, a trading volume of $5.66 billion (CoinGecko, March 7, 2025), and an average TPS of 4,000 (Solscan/Messari), Solana stands out as a fast and efficient platform. This report examines its TPS, role in DeFi, and risks, drawing solely from the provided Messari data and related sources.</p>
 
     <h2>Transactions Per Second (TPS)</h2>
-    <p>Solana excels in transaction speed through its unique PoH and PoS combination...</p>
-    <p>Solana's theoretical throughput of up to 710,000 transactions per second (TPS) makes it an exceptionally fast platform...</p>
+    <p>Solana excels in transaction speed through its unique PoH and Proof of Stake (PoS) combination. The whitepaper describes PoH as a computational sequence verifying time between events using a secure hash function (e.g., SHA-256), allowing parallel verification by external nodes. Messari’s Q3 2022 report notes an average TPS of ~3,200, up 40% QoQ, while Solscan (March 7, 2025) records ~4,735 TPS over 6 hours, averaging a stable ~4,000 TPS. Though below the 710,000 TPS potential, this outperforms competitors like Ethereum (15 TPS). The Leader generates the PoH sequence, processes transactions in RAM, and Verifiers replicate the state, ensuring efficiency. Messari (2025) reports a stable TPS of 3,200, reflecting network performance gains from upgrades like Mainnet Beta V1.10.</p>
 
     <h2>Role in DeFi and Ecosystem</h2>
-    <p>Solana supports a growing DeFi, NFT, and GameFi ecosystem, making it a top contender in the Web3 space...</p>
+    <p>Solana supports a growing DeFi, NFT, and GameFi ecosystem. Messari (Q3 2022) reports a 16% QoQ drop in DeFi Total Value Locked (TVL) but stability at 65 million SOL, indicating sustained utility amid price volatility. In NFTs, Solana ranks second to Ethereum in secondary sales volume, with over 8 million daily new NFTs (up 19.3% QoQ), despite a 62% drop in secondary sales. GameFi efforts, backed by a $150 million Solana Ventures fund, include projects like Eternal Dragons. Unique use cases, such as Helium’s migration to Solana, broaden adoption. User activity (Unique Fee Payers/Signers) declined QoQ, but daily transactions rose, suggesting a stable core user base (Messari Q3 2022). The $143.75 price and $5.66 billion volume (CoinGecko) reflect strong liquidity in this ecosystem.</p>
 
     <h2>Risks and Challenges</h2>
-    <p>Despite its strengths, Solana faces risks, including network outages and validator concentration in specific regions...</p>
+    <p>Despite its strengths, Solana faces risks. Messari (Q3 2022) highlights two major incidents: the Slope wallet exploit (early Q3) and a network outage (September 30). The Slope exploit was isolated, not compromising the core protocol, while the outage stemmed from a consensus bug, unrelated to prior Gulfstream issues. Upgrades like QUIC and fee prioritization enhanced stability, limiting disruptions in Q3 to one event. Decentralization remains a concern; 50% of validators and 40% of stake are concentrated in Germany and the U.S., posing geopolitical risks. However, the Nakamoto Coefficient improved to 31, signaling progress. With a price of $143.75 and volume of $5.66 billion, market confidence persists, but stability and geographic concentration risks warrant attention.</p>
 
-    <h2>Conclusion</h2>
-    <p>Solana shows significant promise for scalability with an average TPS of 4,000, and its focus on decentralization and technological advancement is key to its future success...</p>
+    <h2>Conclusion: Solana’s Future</h2>
+    <p>Solana demonstrates significant potential as a scalable blockchain with an average TPS of 4,000, far surpassing competitors, driven by PoH/PoS. Its stable user base (Messari), $143.75 price, and $5.66 billion volume affirm its Web3 standing, particularly in DeFi, NFTs, and GameFi. While risks like outages and validator concentration persist, technical advancements and adoption (e.g., Helium) promise growth. For the future, Solana must enhance stability and decentralization to approach its 710,000 TPS potential, ensuring competitiveness in the blockchain ecosystem.</p>
 
-    <footer>
-        <p>Source:</p>
+    <div class="source-links">
+        <h3>Sources:</h3>
         <ul>
-            <li><a href="https://solana.com/solana-whitepaper.pdf">Solana Whitepaper</a></li>
-            <li><a href="https://messari.io/project/solana">Messari</a></li>
-            <li><a href="https://www.coingecko.com/id/coins/solana">CoinGecko</a></li>
-            <li><a href="https://solscan.io/">Solscan</a></li>
+            <li><a href="https://solana.com/solana-whitepaper.pdf" target="_blank">Solana Whitepaper</a></li>
+            <li><a href="https://messari.io/project/solana" target="_blank">Messari - Solana Project</a></li>
+            <li><a href="https://messari.io/report/state-of-solana-q3-2022" target="_blank">Messari - State of Solana Q3 2022</a></li>
+            <li><a href="https://www.coingecko.com/id/coins/solana" target="_blank">CoinGecko - Solana</a></li>
+            <li><a href="https://solscan.io/" target="_blank">Solscan</a></li>
         </ul>
-    </footer>
+    </div>
+
 </body>
 </html>
