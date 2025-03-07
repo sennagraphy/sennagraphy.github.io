@@ -3,52 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>45-Day Research Journey</title>
+    <title>sennagraphy</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 50px;
             background-color: black;
             color: white;
+            padding: 20px;
         }
         h1 {
-            color: white;
+            font-size: 24px;
+            font-weight: bold;
         }
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            max-width: 800px;
-            margin: auto;
-            margin-top: 30px;
+        .subtitle {
+            font-size: 16px;
+            margin-top: 10px;
         }
-        .grid-item {
+        .email {
+            color: #1E90FF;
+            text-decoration: none;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .button {
+            display: block;
+            width: 250px;
+            padding: 12px;
+            margin: 10px auto;
             background-color: #333;
-            padding: 20px;
+            color: white;
+            border: none;
             border-radius: 5px;
             text-decoration: none;
-            color: white;
             font-size: 16px;
+            cursor: pointer;
         }
-        .grid-item:hover {
+        .button:hover {
             background-color: #555;
+        }
+        .logo-button {
+            margin-top: 20px;
+            background-color: white;
+            color: black;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <h1>45-Day Research Journey</h1>
-    <div class="grid-container">
-        <a href="#" class="grid-item">Day 1</a>
-        <a href="#" class="grid-item">Day 2</a>
-        <a href="#" class="grid-item">Day 3</a>
-        <a href="#" class="grid-item">Day 4</a>
-        <a href="#" class="grid-item">Day 5</a>
-        <a href="#" class="grid-item">Day 6</a>
-        <a href="#" class="grid-item">Day 7</a>
-        <a href="#" class="grid-item">Day 8</a>
-        <a href="#" class="grid-item">Day 9</a>
-        <a href="#" class="grid-item">Day 10</a>
+    <h1>sennagraphy</h1>
+    <p class="subtitle">Bonjour, I’m Senna.<br>Exploring Web3 & Researching Crypto 24/7 🔥</p>
+    <p class="email">📧 : <a href="mailto:sennagraphy@gmail.com" class="email">sennagraphy@gmail.com</a></p>
+
+    <div class="container">
+        <a href="research.html" class="button">45-Day Research Journey: Crypto & Web3</a>
+        <a href="#" class="button">Quick Research</a>
+        <a href="#" class="button">Web3 Corner</a>
     </div>
+
+    <button class="button logo-button">sennagraphy</button>
 </body>
 </html>
