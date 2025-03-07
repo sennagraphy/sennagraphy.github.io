@@ -8,32 +8,31 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 60px 20px 50px;
+            padding: 50px;
             background-color: black;
             color: white;
         }
         h1 {
-            margin-bottom: 15px;
+            color: white;
+            margin-bottom: 10px;
         }
-        .subtitle {
+        p {
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+        .email {
             font-size: 18px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
-        .email-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 25px;
+        .email a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
         }
-        .email-icon {
-            width: 18px;
-            height: 18px;
+        .email a:hover {
+            text-decoration: underline;
         }
-        .email-text {
-            font-size: 18px;
-        }
-        .menu {
+        .menu-container {
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -42,7 +41,7 @@
         }
         .menu-item {
             background-color: #333;
-            padding: 12px;
+            padding: 15px;
             border-radius: 5px;
             text-decoration: none;
             color: white;
@@ -52,30 +51,33 @@
             background-color: #555;
         }
         .footer {
-            margin-top: 30px;
+            margin-top: 20px;
+        }
+        .footer a {
+            text-decoration: none;
+            color: white;
             font-size: 12px;
-            padding: 8px 14px;
+            padding: 5px 10px;
+            border: 1px solid white;
             border-radius: 5px;
-            background-color: #222;
-            display: inline-block;
+        }
+        .footer a:hover {
+            background-color: white;
+            color: black;
         }
     </style>
 </head>
 <body>
     <h1>sennagraphy</h1>
-    <p class="subtitle">Bonjour, I'm Senna.<br>Exploring Web3 & Researching Crypto 24/7 🔥</p>
-    
-    <div class="email-container">
-        <img src="email-icon.png" alt="Email" class="email-icon">
-        <span class="email-text">sennagraphy@gmail.com</span>
-    </div>
-    
-    <div class="menu">
-        <a href="research.html" class="menu-item">45-Day Research Journey: Crypto & Web3</a>
+    <p>Bonjour, I’m Senna.<br>Exploring Web3 & Researching Crypto 24/7 🔥</p>
+    <p class="email">✉️ <a href="mailto:sennagraphy@gmail.com">sennagraphy@gmail.com</a></p>
+    <div class="menu-container">
+        <a href="#" class="menu-item">45-Day Research Journey: Crypto & Web3</a>
         <a href="#" class="menu-item">Quick Research</a>
         <a href="#" class="menu-item">Web3 Corner</a>
     </div>
-    
-    <div class="footer">sennagraphy</div>
+    <div class="footer">
+        <a href="https://x.com/sennagraphy" target="_blank">sennagraphy</a>
+    </div>
 </body>
 </html>
