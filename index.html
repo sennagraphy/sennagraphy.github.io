@@ -8,79 +8,74 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+            padding: 60px 20px 50px;
             background-color: black;
             color: white;
-            padding: 0;
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
         }
         h1 {
-            font-size: 32px;
-            font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         .subtitle {
             font-size: 18px;
-            margin-top: 5px;
-            line-height: 1.5;
+            margin-bottom: 30px;
         }
-        .email {
-            color: #1E90FF;
-            text-decoration: none;
-            font-size: 16px;
+        .email-container {
             display: flex;
-            align-items: center;
             justify-content: center;
-            gap: 5px;
-            margin-top: 10px;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 25px;
         }
-        .container {
-            margin-top: 20px;
+        .email-icon {
+            width: 18px;
+            height: 18px;
+        }
+        .email-text {
+            font-size: 18px;
+        }
+        .menu {
             display: flex;
             flex-direction: column;
             gap: 10px;
+            max-width: 300px;
+            margin: auto;
         }
-        .button {
-            display: block;
-            width: 280px;
-            padding: 14px;
+        .menu-item {
             background-color: #333;
-            color: white;
-            border: none;
-            border-radius: 8px;
+            padding: 12px;
+            border-radius: 5px;
             text-decoration: none;
-            font-size: 18px;
-            cursor: pointer;
-            transition: 0.3s;
+            color: white;
+            font-size: 14px;
         }
-        .button:hover {
+        .menu-item:hover {
             background-color: #555;
         }
-        .logo-button {
-            margin-top: 20px;
-            background-color: white;
-            color: black;
-            font-weight: bold;
-            font-size: 20px;
-            border-radius: 10px;
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            padding: 8px 14px;
+            border-radius: 5px;
+            background-color: #222;
+            display: inline-block;
         }
     </style>
 </head>
 <body>
     <h1>sennagraphy</h1>
-    <p class="subtitle">Bonjour, I’m Senna.<br>Exploring Web3 & Researching Crypto 24/7 🔥</p>
-    <p class="email">📧 : <a href="mailto:sennagraphy@gmail.com" class="email">sennagraphy@gmail.com</a></p>
-
-    <div class="container">
-        <a href="research.html" class="button">45-Day Research Journey: Crypto & Web3</a>
-        <a href="#" class="button">Quick Research</a>
-        <a href="#" class="button">Web3 Corner</a>
+    <p class="subtitle">Bonjour, I'm Senna.<br>Exploring Web3 & Researching Crypto 24/7 🔥</p>
+    
+    <div class="email-container">
+        <img src="email-icon.png" alt="Email" class="email-icon">
+        <span class="email-text">sennagraphy@gmail.com</span>
     </div>
-
-    <button class="button logo-button">sennagraphy</button>
+    
+    <div class="menu">
+        <a href="research.html" class="menu-item">45-Day Research Journey: Crypto & Web3</a>
+        <a href="#" class="menu-item">Quick Research</a>
+        <a href="#" class="menu-item">Web3 Corner</a>
+    </div>
+    
+    <div class="footer">sennagraphy</div>
 </body>
 </html>
