@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sennagraphy</title>
+    <title>Sennagraphy</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,30 +14,12 @@
         }
         h1 {
             color: white;
-            margin-bottom: 10px;
-        }
-        p {
-            margin-top: 5px;
-            margin-bottom: 20px;
-        }
-        .email {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-        .email a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .email a:hover {
-            text-decoration: underline;
         }
         .menu-container {
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            max-width: 300px;
-            margin: auto;
+            align-items: center;
+            margin-top: 30px;
         }
         .menu-item {
             background-color: #333;
@@ -45,39 +27,55 @@
             border-radius: 5px;
             text-decoration: none;
             color: white;
-            font-size: 14px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
         }
         .menu-item:hover {
             background-color: #555;
         }
-        .footer {
-            margin-top: 20px;
+        .submenu {
+            display: none;
+            flex-direction: column;
+            margin-top: 10px;
         }
-        .footer a {
+        .submenu a {
+            background-color: #444;
+            padding: 10px;
+            border-radius: 5px;
             text-decoration: none;
             color: white;
-            font-size: 12px;
-            padding: 5px 10px;
-            border: 1px solid white;
-            border-radius: 5px;
+            margin: 5px;
         }
-        .footer a:hover {
-            background-color: white;
-            color: black;
+        .submenu a:hover {
+            background-color: #666;
         }
     </style>
 </head>
 <body>
-    <h1>sennagraphy</h1>
-    <p>Bonjour, I’m Senna.<br>Exploring Web3 & Researching Crypto 24/7 🔥</p>
-    <p class="email">✉️ <a href="mailto:sennagraphy@gmail.com">sennagraphy@gmail.com</a></p>
+    <h1>Sennagraphy</h1>
     <div class="menu-container">
-        <a href="#" class="menu-item">45-Day Research Journey: Crypto & Web3</a>
-        <a href="#" class="menu-item">Quick Research</a>
-        <a href="#" class="menu-item">Web3 Corner</a>
+        <div class="menu-item" onclick="toggleSubmenu('journey-submenu')">45-Day Researcher Journey: Crypto & Web3</div>
+        <div id="journey-submenu" class="submenu">
+            <a href="#">Web3 Foundations</a>
+            <div class="menu-item" onclick="toggleSubmenu('deep-dive-submenu')">Deep Dive Portfolio</div>
+            <div id="deep-dive-submenu" class="submenu">
+                <a href="#">AAVE</a>
+                <a href="#">AXIE</a>
+                <a href="#">SOLANA</a>
+            </div>
+        </div>
     </div>
-    <div class="footer">
-        <a href="https://x.com/sennagraphy" target="_blank">sennagraphy</a>
-    </div>
+    
+    <script>
+        function toggleSubmenu(id) {
+            var submenu = document.getElementById(id);
+            if (submenu.style.display === "flex") {
+                submenu.style.display = "none";
+            } else {
+                submenu.style.display = "flex";
+            }
+        }
+    </script>
 </body>
 </html>
