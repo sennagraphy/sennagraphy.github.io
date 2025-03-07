@@ -60,20 +60,29 @@
         <a href="#" class="menu-item">Web3 Education</a>
         <div class="menu-item" onclick="toggleSubmenu('journey-submenu')">45-Day Researcher Journey: Crypto & Web3</div>
         <div id="journey-submenu" class="submenu">
-            <div class="menu-item" onclick="toggleSubmenu('foundations-submenu')">Web3 Foundations</div>
-            <div id="foundations-submenu" class="submenu">
-                <a href="#">Intro to Blockchain</a>
-                <a href="#">Decentralization</a>
-            </div>
-            <div class="menu-item" onclick="toggleSubmenu('deep-dive-submenu')">Deep Dive Portfolio</div>
-            <div id="deep-dive-submenu" class="submenu">
-                <a href="#">AAVE</a>
-                <a href="#">AXIE</a>
-                <a href="#">SOLANA</a>
-            </div>
+            <div class="menu-item" onclick="openPage('foundations')">Web3 Foundations</div>
+            <div class="menu-item" onclick="openPage('deep-dive')">Deep Dive Portfolio</div>
         </div>
     </div>
-    
+
+    <div id="foundations" style="display: none;">
+        <h2>Web3 Foundations</h2>
+        <a href="#">Intro to Blockchain</a><br>
+        <a href="#">Decentralization</a><br>
+    </div>
+
+    <div id="deep-dive" style="display: none;">
+        <h2>Deep Dive Portfolio</h2>
+        <div class="menu-item" onclick="openPage('aave')">AAVE</div>
+        <div class="menu-item" onclick="openPage('axie')">AXIE</div>
+        <div class="menu-item" onclick="openPage('solana')">SOLANA</div>
+    </div>
+
+    <div id="solana" style="display: none;">
+        <h2>Solana Report</h2>
+        <p>Here is your detailed report on Solana...</p>
+    </div>
+
     <script>
         function toggleSubmenu(id) {
             var submenu = document.getElementById(id);
@@ -81,6 +90,22 @@
                 submenu.style.display = "none";
             } else {
                 submenu.style.display = "flex";
+            }
+        }
+
+        function openPage(page) {
+            // Hide all pages
+            document.getElementById('foundations').style.display = 'none';
+            document.getElementById('deep-dive').style.display = 'none';
+            document.getElementById('solana').style.display = 'none';
+
+            // Show the clicked page
+            if (page === 'foundations') {
+                document.getElementById('foundations').style.display = 'block';
+            } else if (page === 'deep-dive') {
+                document.getElementById('deep-dive').style.display = 'block';
+            } else if (page === 'solana') {
+                document.getElementById('solana').style.display = 'block';
             }
         }
     </script>
