@@ -8,106 +8,52 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 50px;
             background-color: black;
             color: white;
+            margin: 0;
+            padding: 0;
         }
         h1 {
-            color: white;
+            font-size: 3em;
+            margin-top: 50px;
         }
-        .menu-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 30px;
+        p {
+            font-size: 1.2em;
+        }
+        .email-link {
+            color: #ffcc00;
+            text-decoration: none;
         }
         .menu-item {
             background-color: #333;
             padding: 15px;
+            margin: 10px;
             border-radius: 5px;
-            text-decoration: none;
             color: white;
             font-size: 16px;
-            margin: 10px;
             cursor: pointer;
+            text-decoration: none;
         }
         .menu-item:hover {
             background-color: #555;
         }
-        .submenu {
-            display: none;
-            flex-direction: column;
-            margin-top: 10px;
-        }
-        .submenu a {
-            background-color: #444;
-            padding: 10px;
-            border-radius: 5px;
+        .profile-link {
+            color: #ffcc00;
             text-decoration: none;
-            color: white;
-            margin: 5px;
-        }
-        .submenu a:hover {
-            background-color: #666;
         }
     </style>
 </head>
 <body>
     <h1>Sennagraphy</h1>
-    <div class="menu-container">
-        <a href="#" class="menu-item">Home</a>
-        <a href="#" class="menu-item">Quick Insights</a>
-        <a href="#" class="menu-item">Web3 Education</a>
-        <div class="menu-item" onclick="toggleSubmenu('journey-submenu')">45-Day Researcher Journey: Crypto & Web3</div>
-        <div id="journey-submenu" class="submenu">
-            <div class="menu-item" onclick="openPage('foundations')">Web3 Foundations</div>
-            <div class="menu-item" onclick="openPage('deep-dive')">Deep Dive Portfolio</div>
-        </div>
+    <p>Bonjour, I'm Senna.<br>Exploring Web3 & Researching Crypto 24/7 🔥</p>
+    <p><a href="mailto:sennagraphy@gmail.com" class="email-link">✉️ sennagraphy@gmail.com</a></p>
+
+    <div>
+        <a href="journey.html" class="menu-item">45-Day Research Journey: Web3 & Crypto</a>
+        <a href="quick-research.html" class="menu-item">Quick Research</a>
+        <a href="web3-corner.html" class="menu-item">Web3 Corner</a>
     </div>
 
-    <div id="foundations" style="display: none;">
-        <h2>Web3 Foundations</h2>
-        <a href="#">Intro to Blockchain</a><br>
-        <a href="#">Decentralization</a><br>
-    </div>
-
-    <div id="deep-dive" style="display: none;">
-        <h2>Deep Dive Portfolio</h2>
-        <div class="menu-item" onclick="openPage('aave')">AAVE</div>
-        <div class="menu-item" onclick="openPage('axie')">AXIE</div>
-        <div class="menu-item" onclick="openPage('solana')">SOLANA</div>
-    </div>
-
-    <div id="solana" style="display: none;">
-        <h2>Solana Report</h2>
-        <p>Here is your detailed report on Solana...</p>
-    </div>
-
-    <script>
-        function toggleSubmenu(id) {
-            var submenu = document.getElementById(id);
-            if (submenu.style.display === "flex") {
-                submenu.style.display = "none";
-            } else {
-                submenu.style.display = "flex";
-            }
-        }
-
-        function openPage(page) {
-            // Hide all pages
-            document.getElementById('foundations').style.display = 'none';
-            document.getElementById('deep-dive').style.display = 'none';
-            document.getElementById('solana').style.display = 'none';
-
-            // Show the clicked page
-            if (page === 'foundations') {
-                document.getElementById('foundations').style.display = 'block';
-            } else if (page === 'deep-dive') {
-                document.getElementById('deep-dive').style.display = 'block';
-            } else if (page === 'solana') {
-                document.getElementById('solana').style.display = 'block';
-            }
-        }
-    </script>
+    <p><a href="https://x.com/Sennagraphy" class="profile-link">Sennagraphy (Twitter Profile)</a></p>
 </body>
 </html>
