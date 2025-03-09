@@ -11,13 +11,20 @@
             color: white;
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            min-height: 100vh; /* Biar gak kepotong */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .container {
             max-width: 800px;
-            margin: auto;
+            width: 100%;
+            padding: 20px;
+            padding-bottom: 50px; /* Tambahin padding bawah */
+            box-sizing: border-box;
+            overflow-wrap: break-word;
         }
-        h1, h2 {
+        h1, h2, h3 {
             text-align: center;
         }
         a {
