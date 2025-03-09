@@ -1,51 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aave V3 Report</title>
-    <style>
-        body {
-            background-color: #111;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            text-align: center;
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        p {
-            white-space: normal;
-            word-wrap: break-word;
-            overflow-wrap: anywhere;
-            text-align: justify;
-            font-size: 18px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Aave V3 Performance in the DeFi Ecosystem</h1>
-        <h2>March 3, 2025</h2>
-        
-        <h2>Introduction</h2>
-        <p>Aave remains a titan in decentralized finance (DeFi), holding a Total Value Locked (TVL) of $18.17 billion as of March 3, 2025, per Messari...</p>
-        
-        <h2>Main Report</h2>
-        
-        <h3>Performance Metrics</h3>
-        <p>Aave’s TVL sits at $18.17 billion on March 3, 2025, stable over 30 days (0.00% change), per Messari...</p>
-        
-        <h3>Key Features</h3>
-        <p>Aave V3, detailed in its 2022 Technical Paper, amps up efficiency, security, and usability...</p>
-        
-        <h3>Strategic Insights</h3>
-        <p>Aave V3 holds a competitive edge with $18.17 billion TVL, a $3.25 billion market cap...</p>
-    </div>
-</body>
-</html>
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.email {
+    color: #1E90FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 10px 0;
+}
+
+nav a {
+    display: block;
+    background: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2em;
+    width: 60%;
+    margin: 0 auto;
+}
+
+nav a:hover {
+    background: #444;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    color: black;
+    display: inline-block;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.twitter {
+    color: black;
+    text-decoration: none;
+}
