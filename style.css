@@ -33,7 +33,7 @@ p {
 }
 
 .email {
-    color: #ffcc00;
+    color: #1e90ff; /* Biru untuk kompatibilitas dengan link */
     text-decoration: none;
     font-weight: bold;
 }
@@ -45,7 +45,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 10px 0;
+    margin: 8px 0; /* Dikurangi dari 10px untuk kotak lebih kecil */
     position: relative; /* Untuk dropdown */
 }
 
@@ -53,11 +53,11 @@ nav ul li a {
     display: block;
     background: #333;
     color: white;
-    padding: 15px;
-    border-radius: 8px;
+    padding: 12px; /* Dikurangi dari 15px untuk kotak lebih kecil */
+    border-radius: 6px; /* Dikurangi dari 8px untuk proporsi */
     text-decoration: none;
-    font-size: 1.2em;
-    width: 60%;
+    font-size: 1em; /* Dikurangi dari 1.2em untuk tulisan lebih kecil */
+    width: 50%; /* Dikurangi dari 60% untuk kotak lebih kecil */
     margin: 0 auto;
     text-align: center;
 }
@@ -66,18 +66,23 @@ nav ul li a:hover {
     background: #444;
 }
 
+/* Warna hitam untuk Next-Level Researcher Toolkit */
+nav ul li a.toolkit-link {
+    color: #000000; /* Hitam */
+}
+
 /* Styling untuk dropdown */
 .dropdown .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333; /* Satu warna untuk dropdown */
-    width: 60%;
+    background-color: #333;
+    width: 50%; /* Sesuai nav utama */
     margin: 0 auto;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 8px;
+    border-radius: 6px;
     z-index: 1;
-    padding: 0; /* Menghapus padding berlebih untuk dropdown pendek */
+    padding: 0;
 }
 
 .dropdown:hover .dropdown-content {
@@ -89,11 +94,11 @@ nav ul li a:hover {
 }
 
 .dropdown-content li a {
-    background: #333; /* Sama dengan parent dropdown */
+    background: #333;
     border-radius: 0;
     margin: 0;
-    padding: 10px;
-    font-size: 1em;
+    padding: 8px; /* Dikurangi dari 10px untuk proporsi */
+    font-size: 0.9em; /* Dikurangi dari 1em */
 }
 
 .dropdown-content li a:hover {
@@ -121,9 +126,9 @@ nav ul li a:hover {
     background: #333;
     color: white;
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 6px;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1em; /* Dikurangi dari 1.1em */
     margin-top: 20px;
 }
 
@@ -139,7 +144,7 @@ footer {
 }
 
 footer a {
-    color: #ffcc00;
+    color: #1e90ff; /* Biru untuk link footer */
     text-decoration: none;
     margin: 0 10px;
 }
@@ -159,7 +164,7 @@ ul li {
 }
 
 ul li a {
-    color: #ffcc00;
+    color: #1e90ff; /* Biru untuk semua link di list */
     text-decoration: none;
 }
 
@@ -169,7 +174,7 @@ ul li a:hover {
 
 /* Styling untuk link kontak di about.html */
 .contact-link {
-    color: #000080; /* Navy */
+    color: #1e90ff; /* Biru untuk konsistensi */
     text-decoration: none;
 }
 
