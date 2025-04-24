@@ -70,14 +70,14 @@ nav ul li a:hover {
 .dropdown .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color: #333; /* Satu warna untuk dropdown */
     width: 60%;
     margin: 0 auto;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 8px;
     z-index: 1;
-    padding: 0; /* Menghapus padding berlebih */
+    padding: 0; /* Menghapus padding berlebih untuk dropdown pendek */
 }
 
 .dropdown:hover .dropdown-content {
@@ -89,7 +89,7 @@ nav ul li a:hover {
 }
 
 .dropdown-content li a {
-    background: #333; /* Satu warna dengan parent */
+    background: #333; /* Sama dengan parent dropdown */
     border-radius: 0;
     margin: 0;
     padding: 10px;
@@ -164,5 +164,15 @@ ul li a {
 }
 
 ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styling untuk link kontak di about.html */
+.contact-link {
+    color: #000080; /* Navy */
+    text-decoration: none;
+}
+
+.contact-link:hover {
     text-decoration: underline;
 }
