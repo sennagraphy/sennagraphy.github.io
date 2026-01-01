@@ -1,10 +1,24 @@
+/* =========================
+   Global Reset & Base
+   ========================= */
+
 body {
     background-color: #121212;
-    color: white;
+    color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+}
+
+/* =========================
+   Layout
+   ========================= */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 header {
@@ -12,31 +26,59 @@ header {
     text-align: center;
 }
 
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* =========================
+   Typography
+   ========================= */
+
 h1 {
     font-size: 2.5em;
-    margin: 0;
+    margin: 0 0 10px 0;
 }
 
 h2 {
     font-size: 1.8em;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 h3 {
     font-size: 1.4em;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 p {
     text-align: justify;
-    padding: 0 20px;
+    margin: 10px 0;
 }
 
-.email {
-    color: #1e90ff; /* Biru untuk kompatibilitas dengan link */
+/* =========================
+   Links
+   ========================= */
+
+a {
+    color: #1e90ff;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.email,
+.contact-link {
+    color: #1e90ff;
     font-weight: bold;
 }
+
+/* =========================
+   Navigation
+   ========================= */
 
 nav ul {
     list-style: none;
@@ -45,43 +87,44 @@ nav ul {
 }
 
 nav ul li {
-    margin: 8px 0; /* Dikurangi dari 10px untuk kotak lebih kecil */
-    position: relative; /* Untuk dropdown */
+    margin: 8px 0;
+    position: relative;
 }
 
 nav ul li a {
     display: block;
-    background: #333;
-    color: white;
-    padding: 12px; /* Dikurangi dari 15px untuk kotak lebih kecil */
-    border-radius: 6px; /* Dikurangi dari 8px untuk proporsi */
-    text-decoration: none;
-    font-size: 1em; /* Dikurangi dari 1.2em untuk tulisan lebih kecil */
-    width: 50%; /* Dikurangi dari 60% untuk kotak lebih kecil */
+    background: #333333;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1em;
+    width: 50%;
     margin: 0 auto;
     text-align: center;
 }
 
 nav ul li a:hover {
-    background: #444;
+    background: #444444;
 }
 
-/* Warna hitam untuk Next-Level Researcher Toolkit */
+/* Link khusus Toolkit (hitam di background terang) */
 nav ul li a.toolkit-link {
-    color: #000000; /* Hitam */
+    color: #000000;
 }
 
-/* Styling untuk dropdown */
+/* =========================
+   Dropdown
+   ========================= */
+
 .dropdown .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333;
-    width: 50%; /* Sesuai nav utama */
-    margin: 0 auto;
+    background-color: #333333;
+    width: 50%;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 6px;
-    z-index: 1;
+    z-index: 10;
     padding: 0;
 }
 
@@ -94,16 +137,36 @@ nav ul li a.toolkit-link {
 }
 
 .dropdown-content li a {
-    background: #333;
+    background: #333333;
+    padding: 8px;
+    font-size: 0.9em;
     border-radius: 0;
-    margin: 0;
-    padding: 8px; /* Dikurangi dari 10px untuk proporsi */
-    font-size: 0.9em; /* Dikurangi dari 1em */
 }
 
 .dropdown-content li a:hover {
-    background: #444;
+    background: #444444;
 }
+
+/* =========================
+   Lists (Research Content)
+   ========================= */
+
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #1e90ff;
+}
+
+/* =========================
+   Quote Section
+   ========================= */
 
 .quote {
     text-align: center;
@@ -115,69 +178,33 @@ nav ul li a.toolkit-link {
     text-align: center;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
+/* =========================
+   Buttons
+   ========================= */
 
 .back-button {
     display: inline-block;
-    background: #333;
-    color: white;
+    background: #333333;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 6px;
-    text-decoration: none;
-    font-size: 1em; /* Dikurangi dari 1.1em */
+    font-size: 1em;
     margin-top: 20px;
 }
 
 .back-button:hover {
-    background: #444;
+    background: #444444;
 }
 
-footer {
-    margin-top: 30px;
-    padding: 20px;
-    text-align: center;
-    font-size: 0.9em;
-}
+/* =========================
+   Footer Links
+   ========================= */
 
 footer a {
-    color: #1e90ff; /* Biru untuk link footer */
-    text-decoration: none;
+    color: #1e90ff;
     margin: 0 10px;
 }
 
 footer a:hover {
-    text-decoration: underline;
-}
-
-/* Styling untuk list di researcherjourney.html dan about.html */
-ul {
-    list-style-type: disc;
-    padding-left: 40px;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-ul li a {
-    color: #1e90ff; /* Biru untuk semua link di list */
-    text-decoration: none;
-}
-
-ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Styling untuk link kontak di about.html */
-.contact-link {
-    color: #1e90ff; /* Biru untuk konsistensi */
-    text-decoration: none;
-}
-
-.contact-link:hover {
     text-decoration: underline;
 }
